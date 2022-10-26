@@ -1,0 +1,97 @@
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 600px;
+    padding: 60px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #263238;
+}
+
+
+.calendar_currentDate {
+    display: flex;
+    align-items: center;
+}
+
+
+.calendar_dateDisplay {
+    background-color: #eeeeee;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.calendar_dateSelectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendar_monthAndYear {
+    color: #1976d2;
+    font-weight: bold;
+}
+
+.calendar_arrowsContainer {
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+}
+
+.calendar_previousMonth,
+.calendar_nextMonth {
+    background-color: white;
+    border: none;
+    font-weight: 900;
+}
+
+.calendar_previousMonth:hover,
+.calendar_nextMonth:hover {
+    color: #9e9e9e;
+    transition: 0.2s;
+}
+
+.calendar_weekdaysHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: #bdbdbd;
+    margin: 30px 0px 20px 0px;
+
+}
+
+.calendar_scheduleContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-top: 30px;
+}
+
+.calendar_scheduleButton {
+    background-color: #1976d2;
+    border: 1px solid #1976d2;
+    border-radius: 8px;
+    padding: 12px 20px 12px 20px;
+    color: white;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.calendar_cancelButton {
+    background-color: white;
+    border: 1.8px solid #bdbdbd;
+    border-radius: 8px;
+    padding: 12px 22px 12px 22px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.calendar_scheduleButton:hover, 
+.calendar_cancelButton:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+}

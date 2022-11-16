@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/the-calendar/static/css/main.24950dbc.css",
-    "main.js": "/the-calendar/static/js/main.e119a216.js",
-    "static/js/787.e8bf859d.chunk.js": "/the-calendar/static/js/787.e8bf859d.chunk.js",
-    "index.html": "/the-calendar/index.html",
-    "main.24950dbc.css.map": "/the-calendar/static/css/main.24950dbc.css.map",
-    "main.e119a216.js.map": "/the-calendar/static/js/main.e119a216.js.map",
-    "787.e8bf859d.chunk.js.map": "/the-calendar/static/js/787.e8bf859d.chunk.js.map"
+    "main.css": "/theCalendar/static/css/main.24950dbc.css",
+    "main.js": "/theCalendar/static/js/main.cbf2f459.js",
+    "static/js/787.e8bf859d.chunk.js": "/theCalendar/static/js/787.e8bf859d.chunk.js",
+    "index.html": "/theCalendar/index.html",
+    "main.24950dbc.css.map": "/theCalendar/static/css/main.24950dbc.css.map",
+    "main.cbf2f459.js.map": "/theCalendar/static/js/main.cbf2f459.js.map",
+    "787.e8bf859d.chunk.js.map": "/theCalendar/static/js/787.e8bf859d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24950dbc.css",
-    "static/js/main.e119a216.js"
+    "static/js/main.cbf2f459.js"
   ]
 }

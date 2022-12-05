@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import { Days } from './Days';
 
 import './Calendar.css';
-import { Days } from './Days.js';
 
 const weekDays = ["S", "M", "T", "W", "T", "F", "S"];
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -9,7 +9,6 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const todayDate = new Date();
 
 export const Calendar = () => {
-
     const [selectedDate, setSelectedDate] = useState(new Date());
     const selectedMonth = months[selectedDate.getMonth()]
     const selectedYear = selectedDate.getFullYear();
@@ -71,7 +70,7 @@ export const Calendar = () => {
                 {/* Days display */}
                 <Days
                     selectedDate={selectedDate}
-                    onChangeSelectedDate={(date) => setSelectedDate(date)}
+                    onChangeSelectedDate={(date: Date) => setSelectedDate(date)}
                 />
 
                 {/* SCHEDULE AND CANCEL BUTTONS */}

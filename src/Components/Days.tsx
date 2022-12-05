@@ -4,10 +4,12 @@ import './Days.css';
 const CALENDAR_GRID = 42;
 // const grid = new Array(CALENDAR_GRID)
 
-export const Days = (props) => {
+type DaysProps = {
+  selectedDate: Date,
+  onChangeSelectedDate: (date: Date) => void
+}
 
-  // Props
-  const { selectedDate, onChangeSelectedDate } = props;
+export const Days = ({ selectedDate, onChangeSelectedDate } : DaysProps) => {
 
   const firstDayOfMonth = new Date(
     selectedDate.getFullYear(),

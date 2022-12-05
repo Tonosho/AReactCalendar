@@ -90,8 +90,30 @@
     transition: 0.2s;
 }
 
-.calendar_scheduleButton:hover, 
+.calendar_scheduleButton:hover,
 .calendar_cancelButton:hover {
     opacity: 0.8;
     transition: 0.2s;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .calendar {
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .calendar_cancelButton {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .calendar {
+        padding: 25px 40px 25px 40px;
+        height: 550px;
+    }
 }

@@ -10,25 +10,44 @@ const todayDate = new Date();
 
 export const Calendar = () => {
     const [selectedDate, setSelectedDate] = useState(new Date());
+    console.log("selecteddate", selectedDate.getMonth());
     const selectedMonth = months[selectedDate.getMonth()]
     const selectedYear = selectedDate.getFullYear();
 
+    // Go to previous & compare dates
     const previousMonthClick = () => {
+        const currentYear = todayDate.getFullYear();
+        const previousYear = selectedDate.getFullYear() - 1;
+        const selectedYear = selectedDate.getFullYear();
+        const currentMonth = todayDate.getMonth();
+        const previousMonth = selectedDate.getMonth() - 1;
+
         setSelectedDate(
             new Date(
                 selectedDate.getFullYear(),
                 selectedDate.getMonth() - 1,
-                (selectedDate.getMonth() - 1) === todayDate.getMonth() && selectedDate.getFullYear() === todayDate.getFullYear() ? 
-                todayDate.getDate() : 1))
+                previousMonth === currentMonth && selectedYear === currentYear ||
+                    previousMonth === -1 && currentMonth === 11 && previousYear === currentYear ?
+                    todayDate.getDate() : 1
+            ))
     };
 
+    // Go to next month & compare dates
     const nextMonthClick = () => {
+        const currentYear = todayDate.getFullYear();
+        const nextYear = selectedDate.getFullYear() + 1;
+        const selectedYear = selectedDate.getFullYear();
+        const currentMonth = todayDate.getMonth();
+        const nextMonth = selectedDate.getMonth() + 1;
+
         setSelectedDate(
             new Date(
                 selectedDate.getFullYear(),
                 selectedDate.getMonth() + 1,
-                (selectedDate.getMonth() + 1) === todayDate.getMonth() && selectedDate.getFullYear() === todayDate.getFullYear() ? 
-                todayDate.getDate() : 1))
+                nextMonth === currentMonth && selectedYear === currentYear ||
+                nextMonth === 12 && currentMonth === 0 && nextYear === currentYear ?
+                todayDate.getDate() : 1
+            ))
     };
 
     return (

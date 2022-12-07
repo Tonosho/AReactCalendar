@@ -1,6 +1,6 @@
 {
   "name": "the-calendar",
-  "homepage": "http://Tonosho.github.io/theCalendar",
+  "homepage": "http://Tonosho.github.io/aReactCalendar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './Days.css';
 
 const CALENDAR_GRID = 42;

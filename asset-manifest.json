@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AReactCalendar/static/css/main.2ac375d9.css",
+    "main.css": "/AReactCalendar/static/css/main.6766bcdb.css",
     "main.js": "/AReactCalendar/static/js/main.73fda861.js",
     "static/js/787.9ccf22c7.chunk.js": "/AReactCalendar/static/js/787.9ccf22c7.chunk.js",
     "index.html": "/AReactCalendar/index.html",
-    "main.2ac375d9.css.map": "/AReactCalendar/static/css/main.2ac375d9.css.map",
+    "main.6766bcdb.css.map": "/AReactCalendar/static/css/main.6766bcdb.css.map",
     "main.73fda861.js.map": "/AReactCalendar/static/js/main.73fda861.js.map",
     "787.9ccf22c7.chunk.js.map": "/AReactCalendar/static/js/787.9ccf22c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ac375d9.css",
+    "static/css/main.6766bcdb.css",
     "static/js/main.73fda861.js"
   ]
 }
